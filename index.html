@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LoveBeats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <model-viewer src="model/earbuds-model-viewer-file.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="poster.webp" shadow-intensity="0.47" camera-orbit="-303.6deg 96.7deg 557.5m" field-of-view="30deg" shadow-softness="1" environment-image="legacy" exposure="1.68">
+        <button class="Hotspot" slot="hotspot-1" data-position="287.688719797662m 239.507165422024m 96.71641151855783m" data-normal="0.9153841554249901m 0.40196007694356056m 0.022359439626356545m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Heart-Shaped Housing</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="215.21168327807882m 84.3717032304726m 79.54835148318246m" data-normal="-0.8974800451183867m -0.4046555709915165m 0.17545209454386324m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Long Battery Life</div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="139.0213681824132m 245.17477655658263m 163.92840141623248m" data-normal="-0.3400944452487976m 0.139463224611179m 0.9299923533513406m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Ear Pins for Active Comfort</div>
+        </button><button class="Hotspot" slot="hotspot-5" data-position="298.9744641047128m 170.33790863660155m 79.15843491321607m" data-normal="0.9844508030275495m -0.14970882517739845m 0.09189060932661393m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">LoveBeats Logo
+            </div>
+        </button><button class="Hotspot" slot="hotspot-6" data-position="189.4680615426841m 203.31158688278612m 94.48768146863463m" data-normal="-0.7390401059481356m -0.4536262463801798m -0.49803910528712203m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Automatic Ear Detection </div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div>
+      </model-viewer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
