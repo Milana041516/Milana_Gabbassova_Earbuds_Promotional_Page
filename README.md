@@ -7,7 +7,8 @@ The project also includes the creation of various assets, such as:
 * Multiple color variations of the earbuds
 * An X-ray view showcasing the internal components
 * Promotional images or animations
-* Additionally, the 3D model will be exported for use as an augmented reality (AR) object on the promotional site, featuring interactive informational hot spots or an animated exploded view.
+
+Additionally, the 3D model will be exported for use as an augmented reality (AR) object on the promotional site, featuring interactive informational hot spots or an animated exploded view.
 
 ![Webpage](images/readme-banner.png)
 
