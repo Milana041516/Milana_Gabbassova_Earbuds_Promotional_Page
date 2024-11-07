@@ -8,7 +8,7 @@
     {
       title: "Heart-Shaped Housing",
       text: "Unique heart-shaped design for a stylish, standout look that fits comfortably and securely",
-      image: "images/feature1.jpg"
+      image: "images/earbud-housing.png"
     },
     {
         title: "Long Battery Life",
@@ -18,17 +18,17 @@
       {
         title: "Ear Tips for Active Comfort",
         text: "These ear pins provide a stable, comfortable fit, keeping your earbuds securely in place, even during intense movement",
-        image: "images/feature1.jpg"
+        image: "images/earbud-tip.png"
       },
       {
         title: "LoveBeats Logo",
         text: " Featuring the LoveBeats logo, these earbuds bring a touch of personality and flair to your listening experience, merging style with high-quality sound",
-        image: "images/feature1.jpg"
+        image: "images/lovebeats-logo.png"
       },
       {
         title: "Automatic Ear Detection ",
         text: "Playback pauses when you remove the earbuds",
-        image: "images/feature1.jpg"
+        image: "images/ear-detection.png"
       },
   ]
   
