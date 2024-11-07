@@ -3,17 +3,22 @@
     width: auto;
     max-width: 1200px;
     height: 700px;
-    background-color: #efefef;
+    background-color: #ff9fdf;
     margin: 0 auto;
   }
   
   .Hotspot {
-    background: url(../images/hotspot.svg) center no-repeat;
-    border: 0px;
-    width: 45px;
-    height: 38px;
-    // display: none;
-    transition: all 1s ease-in-out;
+    background: url(../images/hotspot.svg) no-repeat #fff;
+    border-radius: 32px;
+    border: 5px solid pink;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    position: relative;
+    transition: opacity 0.3s;
   }
 
   .Hotspot:not([data-visible]) {
