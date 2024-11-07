@@ -13,10 +13,10 @@
     {
         title: "Long Battery Life",
         text: "Enjoy hours of uninterrupted playback on a single charge",
-        image: "images/feature1.jpg"
+        image: "images/battery.png"
       },
       {
-        title: "Ear Pins for Active Comfort",
+        title: "Ear Tips for Active Comfort",
         text: "These ear pins provide a stable, comfortable fit, keeping your earbuds securely in place, even during intense movement",
         image: "images/feature1.jpg"
       },
@@ -39,7 +39,8 @@
 
       const img = document.createElement("img");
       img.src = infoBox.image;
-  
+      img.style.width = "300px";
+
       const title = document.createElement("h2");
       title.textContent= infoBox.title;
   
