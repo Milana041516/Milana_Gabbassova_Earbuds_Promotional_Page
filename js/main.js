@@ -53,7 +53,7 @@
     })
   }
   
-  function modelLoaded() {
+  function modelLoaded() {
     loadInfo();
     }
   
