@@ -53,7 +53,9 @@
     })
   }
   
-  loadInfo();
+  function modelLoaded() {
+    loadInfo();
+    }
   
     function showInfo() {
       let selected = document.querySelector(`#${this.slot}`);
@@ -65,10 +67,14 @@
       gsap.to(selected, 1, { autoAlpha: 0 });
     }
   
+   model.addEventListener("load", modelLoaded);
+
     hotspots.forEach(function (hotspot) {
       hotspot.addEventListener("mouseenter", showInfo);
       hotspot.addEventListener("mouseleave", hideInfo);
     });
+
+
   
 
     
