@@ -1,10 +1,11 @@
 (() => {
 
+  //Model Viewer
     const model = document.querySelector("#model");
     const hotspots = document.querySelectorAll(".Hotspot");
   
   
-  const infoBoxes = [ 
+    const infoBoxes = [ 
     {
       title: "Heart-Shaped Housing",
       text: "Unique heart-shaped design for a stylish, standout look that fits comfortably and securely",
@@ -30,7 +31,7 @@
         text: "Playback pauses when you remove the earbuds",
         image: "images/ear-detection.png"
       },
-  ]
+  ] 
   
   function loadInfo() {
     infoBoxes.forEach((infoBox, index)=>{
@@ -51,7 +52,7 @@
       selected.appendChild(title);
       selected.appendChild(text);
     })
-  }
+    }
   
   function modelLoaded() {
     loadInfo();
