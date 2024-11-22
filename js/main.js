@@ -1,8 +1,21 @@
 (() => {
 
+  //BurgerMenu
+
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  })
+
+
+
   //Model Viewer
     const model = document.querySelector("#model");
     const hotspots = document.querySelectorAll(".Hotspot");
+    const hotspotsMobile = document.querySelector('.hotspot-mobile-container');
   
   
     const infoBoxes = [ 
@@ -53,6 +66,41 @@
       selected.appendChild(text);
     })
     }
+
+    function hotspotsMobileInfo() {
+      infoBoxes.forEach(({title, text, image})=> {
+        const hotspotCard = document.createElement('div');
+        hotspotCard.classList.add('hotspot-mobile');
+
+        const hotspotMobileImageCont = document.createElement('div');
+        hotspotMobileImageCont.classList.add('hotspot-mobile-image');
+
+        const hotspotMobileTextCont = document.createElement('div');
+        hotspotMobileTextCont.classList.add('hotspot-mobile-text');
+
+        const hotspotMobileImage = document.createElement('img');
+        hotspotMobileImage.src = image;
+        hotspotMobileImage.classList.add('hotspot-mobile-image');
+
+        const hotspotMobileTitle = document.createElement('p');
+        hotspotMobileTitle.textContent = title;
+        hotspotMobileTitle.classList.add('hotspot-mobile-text-title');
+
+        const hotspotMobileText = document.createElement('p');
+        hotspotMobileText.textContent = text;
+        hotspotMobileText.classList.add('hotspot-mobile-text-basic');
+
+        hotspotMobileImageCont.appendChild(hotspotMobileImage);
+        hotspotMobileTextCont.appendChild(hotspotMobileTitle);
+        hotspotMobileTextCont.appendChild(hotspotMobileText);
+
+        hotspotCard.appendChild(hotspotMobileImageCont);
+        hotspotCard.appendChild(hotspotMobileTextCont);
+
+        hotspotsMobile.appendChild(hotspotCard);
+
+      })
+    }
   
   function modelLoaded() {
     loadInfo();
@@ -75,10 +123,7 @@
       hotspot.addEventListener("mouseleave", hideInfo);
     });
 
-
-  
-
-    
+    hotspotsMobileInfo();
   })();
   
   

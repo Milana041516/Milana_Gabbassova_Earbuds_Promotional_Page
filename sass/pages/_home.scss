@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as v;
+
+.section-intro {
+    border-radius: 30px;
+    background-color: v.$secondary-color;
+    padding: 10px 0px;
+    margin: 20px auto !important;
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+
+        .intro-content-video {
+            overflow: hidden;
+            padding-top: 10px;
+
+            video {
+               width: 100%;
+            }
+        }
+
+        .intro-content-text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

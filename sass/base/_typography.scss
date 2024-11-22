@@ -1,1 +1,21 @@
 @use '../abstracts/variables' as v;
+
+.header-text {
+    color: v.$primary-color;
+    font-weight: v.$heading-font-weight;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.header-text-sections {
+    @extend .header-text;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.basic-text {
+    font-size: 14px;
+    color: v.$primary-color;
+    margin-bottom: 10px;
+}
