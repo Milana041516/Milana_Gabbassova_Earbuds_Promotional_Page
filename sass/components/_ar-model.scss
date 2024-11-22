@@ -35,6 +35,7 @@
     }
 
     .hotspot-mobile-text {
+      width: 200px;
       margin: 0 10px;
 
       .hotspot-mobile-text-title {
@@ -55,6 +56,7 @@
     border: 0px;
     width: 60px;
     height: 48px;
+    display: none;
     transition: all 1s ease-in-out;
   }
 
@@ -170,4 +172,14 @@
   
   model-viewer > #ar-prompt > img {
     animation: circle 4s linear infinite;
+  }
+
+  @media screen and (min-width: 768px) {
+    .Hotspot {
+      display: block;
+    }
+
+    .hotspot-mobile-container {
+      display: none;
+    }
   }
