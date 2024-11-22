@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>LoveBeats</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/logo-icon.png">
-    <link href="css/main.css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  </head>
-  <body>
-    <h1 class="hidden">Portfolio</h1>
-    <header class="grid-con">
+<head>
+  <title>LoveBeats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="images/logo-icon.png">
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/grid.css" rel="stylesheet"/>
+  <link href='https://fonts.googleapis.com/css?family=Lora'rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins'rel='stylesheet'>
+</head>
+<body>
+<h1 class="hidden">Portfolio</h1>
+<header class="grid-con">
         <div class="col-span-full menu-logo-bar">
             <div class="logo-main">
-                <img src="images/logo-main.svg" alt="Love Beats Logo">
+                <a href="#"><img src="images/logo-main.svg" alt="Love Beats Logo"></a>
             </div>
 
             <div class="hamburger">
@@ -26,9 +27,12 @@
 
         <nav class="navbar">
             <h2 class="hidden">Header</h2>
-                <div class="nav-menu">
-            <img src="images/logo-main.svg" alt="LoveBeats Logo" class="nav-logo">
+            <div class="nav-menu">
+                <div>
+                    <a href="#"><img src="images/logo-main.svg" alt="LoveBeats Logo" class="nav-logo"></a>
+                </div>
 
+            <div class="nav-menu-text">
                 <ul>
                     <li class="nav-item">
                         <a class="nav-link">Home</a>
@@ -49,57 +53,85 @@
                         <a class="nav-link">Contact</a>
                     </li>
                 </ul>
-                </div>
-        </nav>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!-- <model-viewer id="model" src="model/earbuds-model-viewer-file.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="images/poster.webp" shadow-intensity="0.47" camera-orbit="-303.6deg 96.7deg 557.5m" field-of-view="30deg" shadow-softness="1" environment-image="legacy" exposure="1.68">
-
-        <button class="Hotspot" slot="hotspot-1" data-position="287.688719797662m 239.507165422024m 96.71641151855783m" data-normal="0.9153841554249901m 0.40196007694356056m 0.022359439626356545m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-1"></div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-2" data-position="202.496030307142m 133.44358830409357m 62.25428800804428m" data-normal="-0.12647360130891874m -0.08752620037459118m -0.988101003146915m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-2"></div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-3" data-position="139.0213681824132m 245.17477655658263m 163.92840141623248m" data-normal="-0.3400944452487976m 0.139463224611179m 0.9299923533513406m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-3"></div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-4" data-position="298.9744641047128m 170.33790863660155m 79.15843491321607m" data-normal="0.9844508030275495m -0.14970882517739845m 0.09189060932661393m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-4">
             </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-5" data-position="189.4680615426841m 203.31158688278612m 94.48768146863463m" data-normal="-0.7390401059481356m -0.4536262463801798m -0.49803910528712203m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-5"></div>
-        </button>
+            </div>
+        </nav>
+</header>
+<main>
+    <section class="grid-con section-intro">
+        <h2 class="hidden">Section Intro</h2>
+        <div class="col-span-full intro-content">
+            <div class="intro-content-video">
+                <video autoplay loop muted>
+                    <source src="video/video-intro.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="intro-content-text">
+                <p class="header-text">Made for Your Ears, Designed for Your Heart!</p>
+                <p class="basic-text">Your perfect sound deserves a perfect fit. With customizable designs, LoveBeats earbuds bring a touch of style and love to your everyday beats. Tune into a world that's truly yours.</p>
+                <div class="order-button"><a href="#">ORDER NOW</a></div>
+            </div>
+        </div>
+    </section>
 
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-        <button slot="ar-button" id="ar-button">
-            View in your space
-        </button>
-        <div id="ar-prompt">
-            <img src="images/ar_hand_prompt.png">
-        </div>
-      </model-viewer>   -->
-      
+    <section class="section-model-viewer">
+        <h2 class="hidden">Sectio AR Model</h2>
+        <p class="col-span-full header-text-sections">We Add the Features. You Enjoy the Sound.</p>
+
+        <model-viewer id="model" src="model/earbuds-model-viewer-file.gltf" ar ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls tone-mapping="aces" poster="images/poster.webp" shadow-intensity="0.47" camera-orbit="-303.6deg 96.7deg 557.5m" field-of-view="30deg" shadow-softness="1" environment-image="legacy" exposure="1.68">
+
+            <button class="Hotspot" slot="hotspot-1" data-position="287.688719797662m 239.507165422024m 96.71641151855783m" data-normal="0.9153841554249901m 0.40196007694356056m 0.022359439626356545m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-1"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-2" data-position="202.496030307142m 133.44358830409357m 62.25428800804428m" data-normal="-0.12647360130891874m -0.08752620037459118m -0.988101003146915m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-2"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-3" data-position="139.0213681824132m 245.17477655658263m 163.92840141623248m" data-normal="-0.3400944452487976m 0.139463224611179m 0.9299923533513406m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-3"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-4" data-position="298.9744641047128m 170.33790863660155m 79.15843491321607m" data-normal="0.9844508030275495m -0.14970882517739845m 0.09189060932661393m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-4">
+                </div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-5" data-position="189.4680615426841m 203.31158688278612m 94.48768146863463m" data-normal="-0.7390401059481356m -0.4536262463801798m -0.49803910528712203m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-5"></div>
+            </button>
+    
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="images/ar_hand_prompt.png">
+            </div>
+          </model-viewer>  
+
+          <div class="col-span-full hotspot-mobile-container">
+          <div class="hotspot-mobile">
+            <!-- <div class="hotspot-mobile-image">
+                <img src="images/earbud-housing.png" alt="earbuds-hotspot">
+            </div>
+
+            <div class="hotspot-mobile-text">
+                <p class="hotspot-mobile-text-title">
+                    Long Battery Life
+                </p>
+                <p class="hotspot-mobile-text-basic">
+                    Get up to 6 hours of playback and 18 more with the case. Fast charging ensures you're always ready to go.
+                </p>
+            </div> -->
+          </div>
+         </div>
+    </section>
+</main>
+
+
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>

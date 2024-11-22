@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as v;
+
+.order-button {
+    background-color: v.$primary-color;
+    width: 150px;
+    height: 47px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(83, 0, 103, 0.8),
+                    0 0 20px rgba(50, 0, 63, 0.6),  
+                    0 0 30px rgba(35, 0, 45, 0.4);
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
