@@ -22,3 +22,9 @@
         color: white;
     }
 }
+
+.colors-order-button {
+    @extend .order-button;
+    margin: 20px auto;
+    width: 190px;
+}

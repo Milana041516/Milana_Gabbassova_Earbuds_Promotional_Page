@@ -1,7 +1,6 @@
 (() => {
 
   //BurgerMenu
-
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
 
@@ -10,7 +9,39 @@
     navMenu.classList.toggle("active");
   })
 
+  //Xray Slider
+  const divisor = document.querySelector('#divisor');
+  const slider = document.querySelector('#slider');
 
+  function moveDivisor() {
+    divisor.style.width = `${slider.value}%`;
+  }
+
+  slider.addEventListener("input", moveDivisor);
+
+
+  //Color Changes
+  const earbudColor = document.querySelector('#earbuds-color');
+  const buttons = document.querySelectorAll('#color-con button');
+
+  function swapColor(e) {
+    const selected = e.currentTarget.id;
+    earbudColor.src = `images/${selected}.png`;
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", swapColor);
+  })
+
+  //FAQ 
+
+  const faqs = document.querySelectorAll('.faq');
+
+  faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+      faq.classList.toggle('openFaq');
+    })
+  })
 
   //Model Viewer
     const model = document.querySelector("#model");
@@ -126,4 +157,100 @@
     hotspotsMobileInfo();
   })();
   
+
+//canvas for mobile
+(() => {
+
+  const canvas = document.querySelector("#explode-view-mobile");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 420;
+  canvas.height = 700;
+
+  const frameCount = 330; 
+
+  const images = []; 
+
+  for(let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = `images/animation-mobile${(i+1).toString().padStart(4, '0')}.webp`;
+      images.push(img);
+  }
+
+  console.table(images);
+
+  const buds = {
+      frame: 0
+  }
+
+  gsap.to(buds, {
+      frame: 329, 
+      snap: "frame", 
+      scrollTrigger: {
+          trigger: "#explode-view-mobile",
+          pin: true,
+          scrub: 1,
+          markers: false,
+          start: "top top",
+          end:"500% top"
+      },
+      onUpdate: render
+  });
+
+  images[0].addEventListener("load", render)
+
+  function render() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(images[buds.frame], 0, 0);
+  }
+
+})();
   
+//canvas for tablet and desktop
+(() => {
+
+  const canvas = document.querySelector("#explode-view");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1920;
+  canvas.height = 1080;
+
+  const frameCount = 319; 
+
+  const images = []; 
+
+  for(let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = `images/animation${(i+1).toString().padStart(4, '0')}.webp`;
+      images.push(img);
+  }
+
+  console.table(images);
+
+
+  const buds = {
+      frame: 0
+  }
+
+  gsap.to(buds, {
+      frame: 318, 
+      snap: "frame", 
+      scrollTrigger: {
+          trigger: "#explode-view",
+          pin: true,
+          scrub: 1,
+          markers: false,
+          start: "top top",
+          end:"500% top"
+      },
+      onUpdate: render
+  });
+
+  images[0].addEventListener("load", render)
+
+  function render() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(images[buds.frame], 0, 0);
+  }
+
+})();

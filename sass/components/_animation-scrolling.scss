@@ -1,0 +1,20 @@
+#explode-view {
+    max-width: 100%;
+    display: none;
+  }
+
+  #explode-view-mobile {
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    #explode-view-mobile {
+      display: none;
+    }
+  
+    #explode-view {
+      max-width: 100%;
+      display: block;
+    }
+  }
