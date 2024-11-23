@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as v;
+
+.features-container {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.feature-card {
+    text-align: center;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: v.$secondary-color;
+    border-radius: 25px;
+    color: v.$primary-color;
+    padding: 26px 16px;
+    margin: 20px;
+
+    .icon1 {
+        width: 50px;
+    }
+
+    .icon2 {
+        width: 70px;
+    }
+
+}
+}
