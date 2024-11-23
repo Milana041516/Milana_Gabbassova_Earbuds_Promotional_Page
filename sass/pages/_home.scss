@@ -1,9 +1,11 @@
 @use '../abstracts/variables' as v;
 
+
+
 .section-intro {
     border-radius: 30px;
     background-color: v.$secondary-color;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 30px;
     margin: 20px auto !important;
 
     .intro-content {
@@ -34,7 +36,7 @@
     background-color: v.$secondary-color;
     border-radius: 30px;
     padding: 20px 0px;
-    margin: 30px 0px;
+    margin: 30px auto;
 
     #color-con{
         display: flex;
@@ -69,8 +71,8 @@
 
 
 .section-faq {
-    padding: 20px 0px;
-    margin: 30px 0px;
+    padding: 20px 10px;
+    margin: 30px auto;
     color: v.$primary-color;
 
     .faq {
@@ -131,11 +133,13 @@
 .section-contact {
     background-color: v.$secondary-color;
     border-radius: 30px;
-    padding: 15px 0px;
-    margin: 35px 0px;
+    padding: 15px 10px;
+    margin: 35px auto;
+    margin-bottom: 30px;
 
     
     .order-form-inputs {
+        padding: 0px 0px 0px 30px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -217,8 +221,9 @@
     }
 
 }
-
    
 }
+
+
 
 

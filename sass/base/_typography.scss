@@ -54,3 +54,19 @@
         margin-bottom: 30px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .header-text {
+        font-size: 45px;
+    }
+
+    .basic-text {
+        font-size: 17px;
+    }
+
+    .copyright-text {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+}
