@@ -17,7 +17,29 @@
       link.addEventListener("click", scrollLink);
   });
 
+//gsap animations
 
+const featureCards = document.querySelectorAll('.feature-card');
+
+featureCards.forEach((card) => {
+  gsap.set(card, {
+    opacity: 0, 
+    y: 50 
+  });
+
+  gsap.to(card, {
+    opacity: 1, 
+    y: 0, 
+    duration: 1, 
+    scrollTrigger: {
+      trigger: card, 
+      start: "top 80%", 
+      end: "top 30%", 
+      toggleActions: "play none none reverse", 
+      markers: false
+    }
+  });
+});
 
   //BurgerMenu
   const hamburger = document.querySelector('.hamburger');
