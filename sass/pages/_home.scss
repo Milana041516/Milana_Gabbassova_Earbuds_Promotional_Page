@@ -125,3 +125,42 @@
         }
     }
 }
+
+.section-contact {
+    background-color: v.$secondary-color;
+    border-radius: 30px;
+    padding: 15px 0px;
+    margin: 35px 0px;
+
+    
+    .order-form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            border: 3px solid #830067;
+            border-radius: 20px;
+            margin: 10px 0px 16px 0px;
+            padding: 24px 22px;
+            font-size: 18px;
+            width: 100%;
+            height: 68px;
+            background: transparent;
+            box-sizing: border-box;
+            outline: none;
+            color: #830067;
+
+            &::placeholder {
+                color: #830067;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .contact-form {
+        margin: 0 auto;
+    }
+
+    
+}
