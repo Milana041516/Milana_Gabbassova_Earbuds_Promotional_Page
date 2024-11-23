@@ -103,6 +103,43 @@ header {
         }
     } 
 
+    @media screen and (min-width: 768px) {
+        .menu-logo-bar {
+           display: none;
+        }
+     
+        .nav-menu {
+           position: relative;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           align-items: center;
+           margin: 30px;
+           height: 40px;
+           padding: 0px;
+           
+           ul {
+            display: flex;
+            justify-content: space-between;
+
+            .nav-item .nav-link {
+                font-size: 15px;
+                margin: 0px 10px 0px 10px;
+                float: right;
+            }
+
+            
+         }
+        }
+     
+        .nav-logo {
+           max-width: none;
+        }
+     
+       
+     }
+     
+
 
 
 

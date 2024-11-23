@@ -12,7 +12,8 @@
 </head>
 <body>
 <h1 class="hidden">Portfolio</h1>
-<header class="grid-con">
+<header>
+    <div class="grid-con">
         <div class="col-span-full menu-logo-bar">
             <div class="logo-main">
                 <a href="#"><img src="images/logo-main.svg" alt="Love Beats Logo"></a>
@@ -29,7 +30,7 @@
             <h2 class="hidden">Header</h2>
             <div class="nav-menu">
                 <div>
-                    <a href="#"><img src="images/logo-main.svg" alt="LoveBeats Logo" class="nav-logo"></a>
+                    <img src="images/logo-main.svg" alt="LoveBeats Logo" class="nav-logo">
                 </div>
 
             <div class="nav-menu-text">
@@ -56,6 +57,7 @@
             </div>
             </div>
         </nav>
+    </div>
 </header>
 <main>
     <section class="grid-con section-intro">
@@ -75,8 +77,28 @@
     </section>
 
     <section class="section-model-viewer">
-        <h2 class="hidden">Sectio AR Model</h2>
-        <p class="col-span-full header-text-sections">We Add the Features. You Enjoy the Sound.</p>
+        <h2 class="hidden">Section AR Model</h2>
+        <p class="col-span-full header-text-sections">We Add the Features.<br> You Enjoy the Sound.</p>
+
+        <div class="col-span-full features-container">
+            <div class="feature-card">
+                <img src="images/battery-icon.svg" alt="battery icon" class="icon1">
+                <p class="features-title">Long Battery Life</p>
+                <p class="basic-text">Get up to 6 hours of playback and 18 more with the case. Fast charging ensures you're always ready to go.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/sound-quality-icon.svg" alt="battery icon" class="icon2">
+                <p class="features-title">Superior Sound Quality</p>
+                <p class="basic-text">Enjoy crystal-clear highs, deep bass, and premium sound quality. LoveBeats makes every beat sound amazing.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/customize-design-icon.svg" alt="battery icon" class="icon3">
+                <p class="features-title">Customizable Design</p>
+                <p class="basic-text">LoveBeats earbuds come in various colors  Choose your preferred style to create a look that's all yours.</p>
+            </div>
+        </div>
 
         <model-viewer id="model" src="model/earbuds-model-viewer-file.gltf" ar ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls tone-mapping="aces" poster="images/poster.webp" shadow-intensity="0.47" camera-orbit="-303.6deg 96.7deg 557.5m" field-of-view="30deg" shadow-softness="1" environment-image="legacy" exposure="1.68">
 
@@ -137,12 +159,12 @@
 
     <section class="grid-con section-colors">
         <h2 class="hidden">Section Colors</h2>
-        <div class="col-span-full colors-content">
-        <div class="colors-content-image">
+        <div class="colors-content-image col-span-full m-col-start-1 m-col-end-7">
             <img src="images/purple.png" alt="Different colors of earbuds" id="earbuds-color">
         </div>
-        <div class="colors-content-buttons">
-        <p class="col-span-full header-text-sections">Pick Your Color. Personalize Your Sound.</p>
+        <div class="colors-content-buttons col-span-full m-col-start-7 m-col-end-13">
+        <p class="colors-mini-text">Available in multiple colors to suit your style.</p>
+        <p class="col-span-full header-text-sections colors-tablet-text">Pick Your Color. Personalize Your Sound.</p>
         <div id="color-con">
             <button id="purple"></button>
             <button id="pink"></button>
@@ -151,7 +173,8 @@
 
         <div class="colors-order-button"><a href="#">ORDER NOW</a></div>
 
-    </div>
+        <p class="colors-mini-text">Make it yours today—choose your color and buy now.</p>
+
     </div>
     </section>
 
@@ -281,25 +304,40 @@
     <section class="grid-con section-contact">
         <h2 class="hidden">Section Contact</h2>
         <p class="col-span-full header-text-sections">Don't Miss a Beat—Reach Out Today!</p>
-        <div class="col-span-full contact-form">
-            <form class="order-form-inputs">
+            <form class="col-span-full m-col-start-1 m-col-end-7 order-form-inputs">
                 <input type="text" placeholder="First and Last Name" id="flname">
                 <input type="text" placeholder="Your Phone Number" id="number">
                 <input type="text" placeholder="Choose your LoveBeats" id="choose-color">
                 <div class="contact-order-button"><a href="#">ORDER NOW</a></div>
             </form>
 
-            <div class="contact-image">
+            <div class="col-span-full m-col-start-7 m-col-end-13 contact-image">
                 <img src="images/contact-img.png" alt="contact-img">
             </div>
-        </div>
     </section>
 </main>
 
-<footer class="grid-con">
-    <div class="col-span-full section-footer">
+<footer>
+    <div class="grid-con">
+    <div class="col-span-full m-col-span-full section-footer">
         <div class="footer-logo">
             <img src="images/logo-main.svg" alt="logo footer">
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Options</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
 
         <div class="footer-social-media">
@@ -310,9 +348,12 @@
                 <img src="images/facebook.svg" alt="facebook icon">
             </div>
         </div>
+
+        
     </div>
 
     <p class="col-span-full copyright-text">© 2024 LoveBeats. All rights reserved.</p>
+</div>
 </footer>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
