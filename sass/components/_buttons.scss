@@ -10,6 +10,7 @@
     transition: box-shadow 0.5s ease;
     margin: 10px 0px 10px 0px;
     cursor: pointer;
+    font-weight: bold;
 
     &:hover {
         box-shadow: 0 0 10px rgba(83, 0, 103, 0.8),
@@ -27,4 +28,12 @@
     @extend .order-button;
     margin: 20px auto;
     width: 190px;
+}
+
+.contact-order-button {
+    @extend .order-button;
+    width: 100%;
+    height: 65px;
+    margin: 10px auto;
+    padding: 20px;
 }

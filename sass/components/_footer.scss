@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as v;
+
+footer {
+    background-color: v.$primary-color;
+    color: white;
+    align-items: center;
+
+    .section-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+
+        .footer-logo {
+            img {
+                width: 100vw;
+            }
+        }
+
+        .footer-social-media {
+            margin-top: 20px;
+            p {
+                font-size: 25px;
+                font-weight: normal;
+            }
+
+            .social-media-icons {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+
+    }
+}
